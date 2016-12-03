@@ -17,5 +17,3 @@ cd ${name/lib/}-$version
 	make
 	make DESTDIR=$PKG install
 }
-
-  
