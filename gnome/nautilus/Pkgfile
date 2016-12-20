@@ -1,4 +1,4 @@
-# Depends on: libnotify gnome-desktop shared-mime-info gobject-introspection exempi libexif gvfs gtk-update-icon-cache desktop-file-utils libselinux desktop-file-utils
+# Depends on: gnome-autoar libnotify gnome-desktop shared-mime-info gobject-introspection exempi libexif gvfs gtk-update-icon-cache desktop-file-utils libselinux desktop-file-utils
 
 description="GNOME file manager."
 url="http://www.gnome.org/"
