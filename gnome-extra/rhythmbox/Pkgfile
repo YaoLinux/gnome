@@ -6,14 +6,13 @@ packager="thierryn1 at hispeed dot ch"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=rhythmbox
-version=3.3.1
-release=4
+version=3.4.1
+release=1
 
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:3}/$name-$version.tar.xz rhythmbox-grilo-0.3.0.patch)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
 build() {
 	cd $name-$version
-	patch -Np1 -i ../rhythmbox-grilo-0.3.0.patch
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
 		--disable-scrollkeeper \
