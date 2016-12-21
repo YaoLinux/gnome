@@ -6,8 +6,8 @@ packager="tnut at nutyx dot org"
 run=(intltool itstool gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-photos
-version=3.20.3
-release=2
+version=3.22.2
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
