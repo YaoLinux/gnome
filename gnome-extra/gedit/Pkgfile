@@ -1,4 +1,4 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache enchant gtk3  gtksourceview3 gvfs libpeas yelp-xsl enchant iso-codes libsoup libzeitgeist python3-gobject python3 
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache enchant gtk3  gtksourceview3 gvfs libpeas yelp-xsl enchant iso-codes libsoup libzeitgeist python-gobject python 
 
 description="A text editor for GNOME"
 url="http://www.gnome.org/"
@@ -7,7 +7,7 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gedit
 version=3.22.0
-release=1
+release=2
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
