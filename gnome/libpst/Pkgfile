@@ -1,4 +1,4 @@
-# Depends on: python boost libgsf
+# Depends on: python2 boost libgsf
 
 description="Outlook .pst file converter."
 url="http://www.five-ten-sg.com/libpst/"
@@ -6,8 +6,8 @@ maintainer="http://linuxfromscratch.org/"
 packager="thierryn1 at hispeed dot ch"
 
 name=libpst
-version=0.6.66
-release=2
+version=0.6.67
+release=1
 
 source=(http://www.five-ten-sg.com/libpst/packages/${name}-${version}.tar.gz)
 
@@ -18,4 +18,3 @@ cd $name-$version
 make
 make DESTDIR=$PKG install
 }
-  
