@@ -3,7 +3,9 @@
 description="Gnome icon-theme, extra icons."
 url="http://www.gnome.org/"
 maintainer="http://linuxfromscratch.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="tnut <tnut@nutyx.org>"
+
+run=(gnome-icon-theme gtk-update-icon-cache)
 
 name=gnome-icon-theme-extras
 version=3.12.0
