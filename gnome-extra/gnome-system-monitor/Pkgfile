@@ -1,8 +1,9 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme itstool libgtop libwnck3 gtkmm3 glibmm librsvg gnome-icon-theme desktop-file-utils gnome-doc-utils
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme itstool libgtop libwnck gtkmm glibmm librsvg gnome-icon-theme desktop-file-utils gnome-doc-utils
 
 description="A system monitor for GNOME."
 url="http://library.gnome.org/users/gnome-system-monitor/3.1/gnome-system-monitor.html"
-packager="thierryn1 at hispeed dot ch"
+packager="tnut <tnut@nutyx.org>"
+
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-system-monitor
