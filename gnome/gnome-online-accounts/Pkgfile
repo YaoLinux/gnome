@@ -1,4 +1,4 @@
-# Depends on: gcr kerberos libgnome-keyring libnotify librest libsecret json-glib docbook-xsl gobject-introspection webkit2gtk3 telepathy-glib gtk-update-icon-cache
+# Depends on: gcr kerberos libgnome-keyring libnotify librest libsecret json-glib docbook-xsl gobject-introspection webkitgtk telepathy-glib gtk-update-icon-cache
 
 description="GNOME service to access online accounts."
 url="http://www.gnome.org/"
