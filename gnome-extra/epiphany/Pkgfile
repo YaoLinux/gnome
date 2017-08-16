@@ -1,4 +1,4 @@
-# Depends on: adwaita-icon-theme avahi libwnck avahi gcr gnome-desktop iso-codes libgnome-keyring libnotify webkit2gtk3 gobject-introspection nss xorg-libxkbfile gnome-desktop gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
+# Depends on: adwaita-icon-theme avahi libwnck avahi gcr gnome-desktop iso-codes libgnome-keyring libnotify webkitgtk gobject-introspection nss xorg-libxkbfile gnome-desktop gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 
 description="A GNOME web browser based on the WebKit rendering engine."
 url="http://www.gnome.org/"
