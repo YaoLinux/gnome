@@ -1,15 +1,9 @@
 description="Shared color targets for creating color profiles."
 url="http://www.gnome.org"
-packager="fanch at orange dot org"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch"
 
 name=shared-color-targets
 version=0.1.7
-release=2
+release=3
 source=(http://people.freedesktop.org/~hughsient/releases/$name-$version.tar.xz)
-
-build(){
-	cd $name-$version
-./configure --prefix=/usr             
-    make
-   make DESTDIR=$PKG install
-}
