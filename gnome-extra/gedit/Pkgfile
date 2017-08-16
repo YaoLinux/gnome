@@ -1,8 +1,9 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache enchant gtk3  gtksourceview3 gvfs libpeas yelp-xsl enchant iso-codes libsoup libzeitgeist python-gobject python 
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache enchant gtk3  gtksourceview gvfs libpeas yelp-xsl enchant iso-codes libsoup libzeitgeist python-gobject python 
 
 description="A text editor for GNOME"
 url="http://www.gnome.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="tnut <tnut@nutyx.org>"
+
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gedit
