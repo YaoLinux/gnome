@@ -1,4 +1,4 @@
-# Depends on: libcanberra clutter-gst clutter-gtk gnome-desktop gnome-video-effects gstreamer1-plugins-bad gstreamer1-plugins-good itstool librsvg libgudev gobject-introspection vala gtk-update-icon-cache
+# Depends on: libcanberra clutter-gst clutter-gtk gnome-desktop gnome-video-effects gstreamer-plugins-bad gstreamer-plugins-good itstool librsvg libgudev gobject-introspection vala gtk-update-icon-cache
 
 description="Use your webcam to take photos and videos, apply fancy special effects and share the fun with others."
 url="http://www.gnome.org/"
