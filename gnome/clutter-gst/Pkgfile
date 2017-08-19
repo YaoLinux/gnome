@@ -1,4 +1,4 @@
-# Depends on: gtk3 clutter gstreamer1-plugins-base gobject-introspection
+# Depends on: gtk3 clutter gstreamer-plugins-base gobject-introspection
 
 description="GStreamer bindings for clutter"
 url="http://www.gnome.org/"
