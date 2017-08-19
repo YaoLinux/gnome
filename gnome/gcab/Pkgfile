@@ -2,12 +2,12 @@
 
 description="The Gcab package contains a program and a library used to create Microsoft cabinet (.cab) archives."
 url="http://www.gnome.org/"
-maintainer="http://linuxfromscratch.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Tnut"
 
 name=gcab
 version=0.7
-release=2
+release=3
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version}/$name-$version.tar.xz)
 
