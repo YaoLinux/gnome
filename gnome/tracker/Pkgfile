@@ -1,4 +1,4 @@
-# Depends on: dbus exempi libgee gdk-pixbuf glib gnome-keyring gobject-introspection gstreamer1-plugins-base gtk3 icu libjpeg-turbo libexif libgsf libmediaart libosinfo libpng networkmanager pango poppler python sqlite libtiff totem-pl-parser upower util-linux vala zlib desktop-file-utils gtk-update-icon-cache
+# Depends on: dbus exempi libgee gdk-pixbuf glib gnome-keyring gobject-introspection gstreamer-plugins-base gtk3 icu libjpeg-turbo libexif libgsf libmediaart libosinfo libpng networkmanager pango poppler python sqlite libtiff totem-pl-parser upower util-linux vala zlib desktop-file-utils gtk-update-icon-cache
 
 description="semantic data storage."
 url="http://www.gnome.org"
