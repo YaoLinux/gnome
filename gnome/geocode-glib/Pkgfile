@@ -1,19 +1,12 @@
 # Depends on: json-glib libsoup gobject-introspection gtk-doc
 
-description="A convenience library for the geocoding and reverse geocoding."
+description="A convenience library for the geocoding and reverse geocoding"
 url="https://en.wikipedia.org/wiki/Geocoding"
-maintainer="Bastien Nocera <hadess at hadess dot net>"
-packager="fanch at nutyx dot org, tnut at nutyx dot org"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
 
 name=geocode-glib
-version=3.20.1
-release=2
+version=3.24.0
+release=1
 
 source=(http://ftp.gnome.org/pub/GNOME/sources/$name/${version%.*}/$name-$version.tar.xz)
-
-build() {
-	cd $name-$version
-	./configure --prefix=/usr 
-	make
-	make DESTDIR=$PKG install
-}
