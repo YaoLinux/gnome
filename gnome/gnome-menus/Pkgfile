@@ -2,8 +2,8 @@
 
 description="GNOME menu specifications."
 url="http://www.gnome.org/"
-maintainer="http://linuxfromscratch.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Tnut"
 
 name=gnome-menus
 version=3.13.3
