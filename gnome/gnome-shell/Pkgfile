@@ -1,4 +1,4 @@
-# Depends on: telepathy-logger telepathy-mission-control caribou evolution-data-server gjs gnome-control-center libcroco mutter startup-notification gnome-bluetooth gstreamer1-plugins-base network-manager-applet gtk-doc adwaita-icon-theme dconf gnome-backgrounds gnome-menus gnome-themes-standard telepathy-mission-control
+# Depends on: telepathy-logger telepathy-mission-control caribou evolution-data-server gjs gnome-control-center libcroco mutter startup-notification gnome-bluetooth gstreamer-plugins-base network-manager-applet gtk-doc adwaita-icon-theme dconf gnome-backgrounds gnome-menus gnome-themes-standard telepathy-mission-control
 
 run=(telepathy-logger telepathy-mission-control)
 description="The next generation GNOME Shell."
