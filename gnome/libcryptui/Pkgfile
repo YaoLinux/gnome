@@ -1,9 +1,9 @@
 # Depends on: gtk3 gpgme dbus-glib gnupg libnotify libgnome-keyring dconf gobject-introspection intltool
 
-description="Library for OpenPGP prompts."
+description="Library for OpenPGP prompts"
 url="http://git.gnome.org/libcryptui"
-maintainer="http://linuxfromscratch.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Tnut"
 
 name=libcryptui
 version=3.12.2
