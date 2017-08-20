@@ -1,12 +1,14 @@
 # Depends on: gdk-pixbuf json-glib libarchive libsoup pango gcab gobject-introspection gtk3 yaml
 
-description="Library to read and write AppStream metadata."
+description="Library to read and write AppStream metadata"
 url="http://people.freedesktop.org/~hughsient/appstream-glib/"
-maintainer="Richard Hughes <richard at hughsie at com>"
 packager="fanch at nutyx dot org, tnut at nutyx dot org"
  
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
+
 name=appstream-glib
-version=0.5.17
+version=0.6.13
 release=1
 
 source=(http://people.freedesktop.org/~hughsient/$name/releases/$name-$version.tar.xz)
