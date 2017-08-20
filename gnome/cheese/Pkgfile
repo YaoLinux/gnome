@@ -1,20 +1,13 @@
 # Depends on: libcanberra clutter-gst clutter-gtk gnome-desktop gnome-video-effects gstreamer-plugins-bad gstreamer-plugins-good itstool librsvg libgudev gobject-introspection vala gtk-update-icon-cache
 
-description="Use your webcam to take photos and videos, apply fancy special effects and share the fun with others."
+description="Use your webcam to take photos and videos, apply fancy special effects and share the fun with others"
 url="http://www.gnome.org/"
-maintainer="daniel g. siegel <dgsiegel at gnome dot org>, Jaap A. Haitsma <jaap at haitsma dot org>, Filippo Argiolas <fargiolas at gnome dot org>, Yuvaraj Pandian T <yuvipanda at yuvi dot in> and Luciana Fujii Pontello <luciana at fujii dot eti dot br>"
-packager="tnut at nutyx dot org, fanch at nutyx dot org"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
 run=(gtk-update-icon-cache)
 
 name=cheese
-version=3.22.1
-release=2
+version=3.24.0
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
-
-build() {
-cd $name-$version
-./configure --prefix=/usr 
-make
-make DESTDIR=$PKG install
-}
