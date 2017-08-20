@@ -1,9 +1,9 @@
 # Depends on: gtk3 gdk-pixbuf pango cairo
 
-description="GNOME Docking Libraries."
+description="GNOME Docking Libraries"
 url="http://www.gnome.org/"
-maintainer="http://linuxfromscratch.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Tnut"
 
 name=gdl
 version=3.22.0
