@@ -2,7 +2,8 @@
 
 description="Small library for playing system sounds"
 url="https://wiki.gnome.org/Projects/GSound"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
 
 name=gsound
 version=1.0.2
