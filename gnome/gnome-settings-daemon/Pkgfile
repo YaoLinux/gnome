@@ -1,23 +1,25 @@
 # Depends on: geoclue2 geocode-glib libgweather librsvg networkmanager nss intltool cups colord gnome-desktop libcanberra libnotify libgnomekbd libwacom pulseaudio upower xorg gsettings-desktop-schemas gtk-update-icon-cache
 
-description="The GNOME Settings daemon."
+description="The GNOME Settings daemon"
 url="http://www.gnome.org/"
-packagers="fanch at nutyx dot org, tnut at nutyx dot org"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
 run=(gtk-update-icon-cache)
 
 run=(gsettings-desktop-schemas)
 
 name=gnome-settings-daemon
-version=3.22.1
+version=3.24.3
 release=1
 
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz gnome-settings-daemon-3.24.3-fix-without-gdkwayland.patch)
 build() {
 cd $name-$version
+patch -Np1 -i ../gnome-settings-daemon-3.24.3-fix-without-gdkwayland.patch
 ./configure --prefix=/usr     \
             --sysconfdir=/etc \
-            --disable-static \
-            --disable-wayland
+            --disable-wayland \
+            --disable-static
 make
-make  udevrulesdir=/lib/udev/rules.d DESTDIR=$PKG install
+make udevrulesdir=/lib/udev/rules.d DESTDIR=$PKG install
 }
