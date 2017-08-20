@@ -2,12 +2,13 @@
 
 url="http://www.gnome.org/"
 description="The Gnome Session Handler"
-packager="fanch at nutyx dot org, tnut at nutyx dot org"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
 run=(openbox gtk-update-icon-cache)
 
 name=gnome-session
-version=3.22.2
-release=2
+version=3.24.1
+release=1
 
 source=(timeout.patch
 	http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
