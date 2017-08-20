@@ -2,7 +2,8 @@
 
 description="a VNC server for the GNOME desktop"
 url="http://www.gnome.org"
-packager="fanch at nutyx dot org, tnut at nutyx dot org"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
 run=(desktop-file-utils)
 
 name=vino
@@ -13,7 +14,7 @@ source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar
 
 build() {
 	cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc 
+	./configure --prefix=/usr --sysconfdir=/etc 
 	make
 	make DESTDIR=$PKG install
 }
