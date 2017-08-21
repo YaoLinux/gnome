@@ -1,22 +1,26 @@
 # Depends on: vim db gnome-online-accounts gnome-common gperf icu libgdata libical libsecret libsoup nss libgweather vala gobject-introspection  kerberos gtk3 gtk-doc openldap
 
-description="Programs that work with contacts, tasks, and calendar information."
+description="Programs that work with contacts, tasks, and calendar information"
 url="http://www.gnome.org/"
-packager="fanch at nutyx dot org, tnut at nutyx dot org"
-
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
 name=evolution-data-server
-version=3.22.6
+version=3.24.5
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
- ./configure --prefix=/usr --sysconfdir=/etc \
-      --localstatedir=/var --with-openldap=yes \
-      --with-krb5=/usr --with-libdb=/usr \
-      --enable-vala-bindings --disable-uoa \
-      --enable-gtk-doc --disable-google-auth
+cmake -DCMAKE_INSTALL_PREFIX=/usr   \
+      -DENABLE_UOA=OFF              \
+      -DENABLE_VALA_BINDINGS=ON     \
+      -DENABLE_INSTALLED_TESTS=ON   \
+      -DENABLE_GOOGLE=ON            \
+      -DENABLE_GOOGLE_AUTH=OFF      \
+      -DWITH_OPENLDAP=OFF           \
+      -DWITH_KRB5=OFF               \
+      -DENABLE_INTROSPECTION=ON
 make
 make DESTDIR=$PKG install
 }
