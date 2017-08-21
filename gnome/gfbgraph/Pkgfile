@@ -1,9 +1,9 @@
 # Depends on: librest json-glib gobject-introspection gnome-online-accounts
 
-description="GLib/GObject wrapper for the Facebook Graph API."
+description="GLib/GObject wrapper for the Facebook Graph API"
 url="http://www.gnome.org/"
-maintainer="http://linuxfromscratch.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Tnut"
 
 name=gfbgraph
 version=0.2.3
