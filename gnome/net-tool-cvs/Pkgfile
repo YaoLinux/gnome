@@ -2,8 +2,8 @@
 
 desescription="The Net-tools package is a collection of programs for controlling the network subsystem of the Linux kernel"
 url="http://net-tools.sourceforge.net/"
-maintainer="http://linuxfromscratch.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Tnut"
 
 name=net-tool-cvs
 version=20101030
