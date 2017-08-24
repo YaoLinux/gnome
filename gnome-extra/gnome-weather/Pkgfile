@@ -1,13 +1,14 @@
 # Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  gtk3 gjs libgweather desktop-file-utils geoclue2
 
-description="Access current weather conditions and forecasts."
+description="Access current weather conditions and forecasts"
 url="http://www.gnome.org/"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Tnut"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-weather
-version=3.20.2
-release=2
+version=3.24.0
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
