@@ -1,4 +1,4 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme evolution-data-server gnome-desktop gnome-icon-theme highlight shared-mime-info  gstreamer libcanberra libgweather libcryptui gtkspell gtkhtml highlight itstool libpst libgdata shared-mime-info webkitgtk3 libnotify clutter-gtk geoclue geocode-glib libchamplain gtk-doc openldap gtksourceview gtkspell openldap
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme evolution-data-server gnome-desktop gnome-icon-theme highlight shared-mime-info  gstreamer libcanberra libgweather libcryptui gtkspell gtkhtml highlight itstool libgdata shared-mime-info libnotify clutter-gtk geoclue geocode-glib libchamplain gtk-doc openldap gtksourceview gtkspell openldap
 
 description="Manage your email, contacts and schedule."
 url="http://www.gnome.org/"
@@ -15,15 +15,14 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 cd $name-$version
-sed -i "/was moved/s/^/#/" ltmain.sh
-./configure --prefix=/usr         \
-            --sysconfdir=/etc     \
-            --disable-gtkspell    \
-            --disable-pst-import  \
-            --disable-spamassassin \
-            --with-openldap  \
-            --enable-gtk-doc  \
-            --disable-autoar
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+      -DSYSCONF_INSTALL_DIR=/etc  \
+      -DENABLE_INSTALLED_TESTS=ON \
+      -DENABLE_PST_IMPORT=OFF     \
+      -DENABLE_GTKSPELL=OFF       \
+      -DENABLE_GTK_DOC=ON         \
+      -DENABLE_YTNEF=OFF	  \
+      -DENABLE_AUTOAR=OFF
 make
 make DESTDIR=$PKG install
 }
