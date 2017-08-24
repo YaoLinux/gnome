@@ -1,13 +1,13 @@
 # Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme desktop-file-utils gnome-desktop gnome-icon-theme libpeas shared-mime-info yelp-xsl gobject-introspection librsvg exempi lcms2 libexif
 
-description="Eye of Gnome: An image viewing and cataloging program."
+description="Eye of Gnome: An image viewing and cataloging program"
 url="http://www.gnome.org/"
-maintainer="Claudio Saavedra <csaavedra at gnome dot org>, Felix Riemann <friemann at gnome dot org>"
-packager="fanch at nutyx dot org, tnut at nutyx dot org"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Fanch, Tnut"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=eog
-version=3.20.5
+version=3.24.1
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
