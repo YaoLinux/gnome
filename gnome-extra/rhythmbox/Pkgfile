@@ -1,8 +1,9 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  gobject-introspection intltool gtk3 gdk-pixbuf libsoup libpeas libxml2 tdb json-glib totem-pl-parser libmtp gstreamer gstreamer-plugins-base gstreamer-plugins-good webkitgtk python python-gobject python-gobject
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  gobject-introspection intltool gtk3 gdk-pixbuf libsoup libpeas libxml2 tdb json-glib totem-pl-parser libmtp gstreamer gstreamer-plugins-base gstreamer-plugins-good webkitgtk python python-gobject
 
 description="An iTunes-like music playback and management application"
 url="http://www.rhythmbox.org"
-packager="thierryn1 at hispeed dot ch"
+packager="jayce <jayce.net@gmail.com>"
+contributors="Tnut"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=rhythmbox
