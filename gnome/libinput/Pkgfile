@@ -6,8 +6,7 @@ packager="jayce <jayce.net@gmail.com>"
 contributors="Tnut, Pierre B"
 
 name=libinput
-version=1.8.1
-release=1
+version=1.8.3
 
 source=(http://freedesktop.org/software/$name/$name-$version.tar.xz)
 
@@ -19,4 +18,11 @@ cd $name-$version
             --with-udev-dir=/lib/udev
 make
 make DESTDIR=$PKG install
+}
+uptodate() {
+local url ext
+ext=".tar.xz"
+url="https://freedesktop.org/software/libinput/"
+lynx -dump -listonly --nonumbers $url/?C=M\;O=A|\
+grep $ext$|tail -1|sed s@$url/$name-@@|sed s@$ext@@
 }
