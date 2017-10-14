@@ -18,3 +18,10 @@ build() {
 	make
 	make DESTDIR=$PKG install
 }
+uptodate() {
+local url ext
+ext=".tar.xz"
+url="http://tecnocode.co.uk/downloads/uhttpmock"
+lynx -dump -listonly --nonumbers $url/?C=M\;O=A|\
+grep $ext$|tail -1|sed s@$url/$name-@@|sed s@$ext@@
+}
