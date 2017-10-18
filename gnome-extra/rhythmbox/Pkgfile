@@ -7,8 +7,7 @@ contributors="Tnut, Jayce"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gstreamer gstreamer-plugins-base gstreamer-plugins-good)
 
 name=rhythmbox
-version=3.4.1
-release=3
+version=3.4.2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
