@@ -2,12 +2,11 @@
 
 description="Access, organize, and share your photos on GNOME"
 url="http://www.gnome.org"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tnut, Jayce"
 run=(intltool itstool gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-photos
-version=3.24.2
-release=1
+version=3.24.3
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
