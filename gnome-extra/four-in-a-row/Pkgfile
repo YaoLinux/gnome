@@ -2,12 +2,11 @@
 
 description="Make lines of the same color to win"
 url="http://www.gnome.org"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tnut, Jayce"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=four-in-a-row
-version=3.22.1
-release=1
+version=3.22.2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
