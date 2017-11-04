@@ -1,4 +1,4 @@
-# Depends on: geoclue2 geocode-glib libgweather librsvg networkmanager nss intltool cups colord gnome-desktop libcanberra libnotify libgnomekbd libwacom pulseaudio upower xorg gsettings-desktop-schemas gtk-update-icon-cache
+# Depends on: geoclue2 geocode-glib libgweather librsvg networkmanager nss intltool cups colord gnome-desktop libcanberra libnotify libgnomekbd libwacom pulseaudio upower gsettings-desktop-schemas gtk-update-icon-cache
 
 description="The GNOME Settings daemon"
 url="http://www.gnome.org/"
