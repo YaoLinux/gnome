@@ -1,4 +1,4 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  libcanberra libdvdread gnome-settings-daemon librsvg gtk3 intltool libsecret libpwquality udisks2 xorg-libxinerama xorg-app
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache libcanberra libdvdread gnome-settings-daemon librsvg gtk3 intltool libsecret libpwquality udisks2 xorg-libxinerama
 
 description="Disk Management Utility for GNOME."
 url="http://www.gnome.org/"
