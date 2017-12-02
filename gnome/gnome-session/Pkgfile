@@ -7,7 +7,7 @@ contributors="Fanch, Tnut"
 run=(openbox gtk-update-icon-cache)
 
 name=gnome-session
-version=3.24.1
+version=3.24.2
 release=1
 
 source=(timeout.patch
