@@ -2,12 +2,12 @@
 
 description="GNOME3 movie player based on GStreamer"
 url="http://www.gnome.org/projects/totem/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="remy <remy@nutyx.org>"
+contributors="Tnut, jayce"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=totem
-version=3.24.0
+version=3.26.0
 release=1
 
 source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)

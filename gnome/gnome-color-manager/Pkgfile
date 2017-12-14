@@ -2,12 +2,12 @@
 
 description="Color profile manager for the GNOME desktop"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Fanch, Tnut"
+packager="remy <remy@nutyx.org>"
+contributors="Fanch, Tnut, jayce"
 run=(desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-color-manager
-version=3.24.0
+version=3.26.0
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)

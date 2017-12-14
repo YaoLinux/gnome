@@ -2,11 +2,11 @@
 
 description="Background images and data for GNOME"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="remy <remy@nutyx.org>"
+contributors="Tnut, jayce"
 
 name=gnome-backgrounds
-version=3.24.0
+version=3.26.2
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
