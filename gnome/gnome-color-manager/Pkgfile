@@ -1,4 +1,4 @@
-# Depends on: adwaita-icon-theme appstream-glib libcanberra vte3 exiv2 desktop-file-utils shared-color-targets colord-gtk libexif intltool yelp-tools pango cairo desktop-file-utils gtk-update-icon-cache
+# Depends on: meson appstream-glib libcanberra desktop-file-utils shared-color-targets colord colord-gtk libexif exiv2 vte itstool gtk-update-icon-cache
 
 description="Color profile manager for the GNOME desktop"
 url="http://www.gnome.org/"
@@ -13,11 +13,10 @@ release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
  
 build() {
-   unset MAKEFLAGS
    cd $name-$version 
-   ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-               --libexecdir=/usr/lib/gnome-color-manager \
-               --disable-static --disable-man-pages
-   make 
-   make DESTDIR=$PKG install
+mkdir build
+cd build
+meson --prefix=/usr
+ninja 
+DESTDIR=$PKG ninja  install
 }

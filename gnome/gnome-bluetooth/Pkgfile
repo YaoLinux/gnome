@@ -1,23 +1,22 @@
-# Depends on: itstool gtk3 gobject-introspection bluez gtk-doc libnotify libcanberra gtk-update-icon-cache
+# Depends on: itstool libnotify gtk3 gobject-introspection meson bluez gtk-doc libcanberra gtk-update-icon-cache
 
 description="The GNOME Bluetooth Subsystem"
 url="https://wiki.gnome.org/Projects/GnomeBluetooth"
 packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut, jayce"
-run=(gtk-update-icon-cache)
+run=(gtk-update-icon-cache bluez)
 
 name=gnome-bluetooth
 version=3.26.1
-release=4
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --enable-gtk-doc \
---disable-icon-update \
---disable-schemas-compile \
---disable-desktop-update
-make
-make DESTDIR=$PKG install
+mkdir build
+cd build
+meson --prefix=/usr
+ninja
+DESTDIR=$PKG ninja install
 }
