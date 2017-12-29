@@ -8,6 +8,7 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gstreame
 
 name=rhythmbox
 version=3.4.2
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
