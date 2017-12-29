@@ -2,11 +2,12 @@
 
 description="Library for display servers and other applications that need to deal with input devices"
 url="http://www.freedesktop.org/wiki/Software/libinput/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut, Pierre B"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tnut, Pierre B, Jayce"
 
 name=libinput
 version=1.8.3
+release=2
 
 source=(http://freedesktop.org/software/$name/$name-$version.tar.xz)
 
@@ -14,8 +15,7 @@ build() {
 cd $name-$version
 ./configure --prefix=/usr    \
             --disable-static \
-	    --disable-documentation \
-            --with-udev-dir=/lib/udev
+	    --disable-documentation
 make
 make DESTDIR=$PKG install
 }
