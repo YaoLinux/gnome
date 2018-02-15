@@ -1,4 +1,4 @@
-# Depends on: shared-mime-info gstreamer-plugins-base itstool libcanberra libnotify gobject-introspection libburn libisofs nautilus totem-pl-parser tracker gvfs dvd+rw-tools libdvdcss cdrdao json-glib
+# Depends on: shared-mime-info gstreamer-plugins-base itstool libcanberra libnotify gobject-introspection libburn libisofs tracker gvfs dvd+rw-tools libdvdcss cdrdao json-glib
 
 description="Brasero is an application used to burn CD/DVD on the GNOME Desktop"
 url="https://www.gnome.org"
