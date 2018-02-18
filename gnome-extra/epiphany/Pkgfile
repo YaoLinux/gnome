@@ -1,12 +1,25 @@
-# Depends on: lsb-release libwnck avahi gcr gnome-desktop iso-codes libgnome-keyring libnotify json-glib webkitgtk nss gnome-desktop gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
+# Depends on: ninja meson lsb-release libwnck avahi gcr gnome-desktop iso-codes libgnome-keyring libnotify json-glib webkitgtk nss gnome-desktop gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 
 description="A GNOME web browser based on the WebKit rendering engine."
 url="http://www.gnome.org/"
-packager="remy <remy@nutyx.org>"
-contributors="Tnut, Jayce"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tnut, Jayce, Remy"
 run=(adwaita-icon-theme gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=epiphany
-version=3.24.5
+version=3.26.6
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
+
+build() {
+cd $name-$version
+
+mkdir build
+cd    build
+
+meson --prefix=/usr
+
+ninja
+
+DESTDIR=$PKG ninja install
+}
