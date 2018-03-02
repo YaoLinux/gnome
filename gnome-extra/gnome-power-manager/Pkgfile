@@ -2,19 +2,20 @@
 
 description="System power information and statistics"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tnut, Jayce"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-power-manager
-version=3.24.0
-release=1
+version=3.26.0
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc
-make
-make DESTDIR=$PKG install
+mkdir build
+cd    build
+meson --prefix=/usr
+ninja
+DESTDIR=$PKG ninja install
 }
