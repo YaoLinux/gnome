@@ -1,3 +1,10 @@
-OBSOLET
+## Ports for constructing the 'gnome' and 'gnome-extra' collections
 
-This project is not working anymore and will be removed in some future
+Contributions are welcome. If you don't know what it all about, please take the time to read the documentation at
+http://www.nutyx.org/en/build-package.html
+(version française)
+http://www.nutyx.org/fr/build-package.html
+
+It will explain you what's a collection, a git, a port, the tools around 'cards' etc
+
+Have fun :)
