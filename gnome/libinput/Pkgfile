@@ -6,8 +6,8 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Tnut, Pierre B, Jayce"
 
 name=libinput
-version=1.8.3
-release=2
+version=1.8.4
+release=1
 
 source=(http://freedesktop.org/software/$name/$name-$version.tar.xz)
 

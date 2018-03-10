@@ -6,7 +6,7 @@ packager="jayce <jayce.net@gmail.com>"
 contributors="Tnut"
 
 name=libosinfo
-version=1.0.0
+version=1.1.0
 release=1
 
 source=(https://releases.pagure.org/$name/$name-$version.tar.gz)

@@ -6,8 +6,8 @@ packager="jayce <jayce.net@gmail.com>"
 contributors="Tnut"
 
 name=libgexiv2
-version=0.10.6
-release=6
+version=0.10.7
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/${name/lib/}/${version%.*}/${name/lib/}-$version.tar.xz)
 
