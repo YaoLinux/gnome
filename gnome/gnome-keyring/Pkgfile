@@ -2,20 +2,24 @@
 
 description="GNOME Password Management daemon"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
+packager="fanch <fanch@nutyx.org>"
 contributors="Fanch, Tnut"
 
 name=gnome-keyring
-version=3.20.1
-release=3
+version=3.28.0
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr     \
-            --sysconfdir=/etc \
-            --with-pam-dir=/lib/security 
+./configure --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --libexecdir=/usr/lib \
+    --with-pam-dir=/usr/lib/security \
+    --disable-static \
+    --disable-schemas-compile
 make
 make DESTDIR=$PKG install
 }

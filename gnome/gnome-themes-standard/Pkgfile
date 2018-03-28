@@ -2,11 +2,11 @@
 
 description="Default themes for the GNOME desktop"
 url="https://git.gnome.org/browse/gnome-themes-standard/"
-packager="jayce <jayce.net@gmail.com>"
+packager="fanch <fanch@nutyx.org>"
 contributors="Fanch, Tnut"
 
 name=gnome-themes-standard
-version=3.22.3
-release=2
+version=3.27.90
+release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)

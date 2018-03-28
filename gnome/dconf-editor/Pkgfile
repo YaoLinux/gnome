@@ -1,19 +1,22 @@
-# Depends on: dconf dbus gtk3 libxml2 libxslt vala 
+# Depends on: dconf dbus gtk3 libxml2 libxslt meson ninja vala 
 
 description="A graphical editor for the DConf database"
 url="http://www.gnome.org/"
-packager="remy <remy@nutyx.org>"
+packager="fanch <fanch@nutyx.org>"
 contributors="Fanch, Tnut, jayce"
 
 name=dconf-editor
-version=3.26.2
+version=3.28.0
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc
-make
-make DESTDIR=$PKG install
+mkdir build
+cd build
+meson --prefix=/usr -Denable-systemd=no
+ninja
+DESTDIR=$PKG ninja install
 }
+
