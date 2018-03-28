@@ -1,21 +1,22 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  hicolor-icon-theme  gtk3 librsvg
+# Depends on: meson ninja gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  hicolor-icon-theme  gtk3 librsvg
 
 description="Play the classic two-player boardgame of chess."
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
+packager="fanch <fanch@nutyx.org>"
 contributors="Fanch"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-chess
-version=3.26.0
+version=3.28.0
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
- ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-      --disable-schemas-compile
-make
-make DESTDIR=$PKG install
+mkdir build
+cd    build
+meson --prefix=/usr 
+ninja
+DESTDIR=$PKG ninja install
 }
