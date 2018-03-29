@@ -1,12 +1,12 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache babl exempi gegl gfbgraph gnome-desktop gnome-online-accounts grilo libgdata libexif tracker libgexiv2 geocode-glib
+# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache babl exempi gegl gfbgraph gnome-desktop gnome-online-accounts grilo libgdata libexif tracker libdazzle libgexiv2 geocode-glib
 
 description="Access, organize, and share your photos on GNOME"
 url="http://www.gnome.org"
-packager="remy <remy@nutyx.org>"
+packager="fanch <fanch@nutyx.org>"
 contributors="Tnut, Jayce"
 run=(intltool itstool gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-photos
-version=3.26.3
+version=3.28.0
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)

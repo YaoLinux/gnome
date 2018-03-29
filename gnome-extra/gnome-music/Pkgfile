@@ -1,20 +1,22 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils python-gobject gtk-update-icon-cache gobject-introspection grilo gtk3 intltool itstool libmediaart python python2 tracker
+# Depends on: meson ninja gsettings-desktop-schemas desktop-file-utils python-gobject gtk-update-icon-cache gobject-introspection grilo gtk3 intltool itstool libmediaart python python2 tracker
 
 description="Music player and management application"
 url="http://www.gnome.org/"
-packager="remy <remy@nutyx.org>"
+packager="fanch <fanch@nutyx.org>"
 contributors="Tnut"
 run=(intltool itstool python gobject-introspection gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-music
-version=3.26.1
+version=3.28.0
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
  
 build() {
 cd $name-$version
-./configure --prefix=/usr --disable-schemas-compile
-make
-make DESTDIR=$PKG install
+mkdir build
+cd build
+meson --prefix=/usr 
+ninja     
+DESTDIR=$PKG ninja install
 }
