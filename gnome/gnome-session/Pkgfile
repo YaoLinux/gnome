@@ -1,13 +1,13 @@
-# Depends on: dbus-glib gnome-desktop json-glib mesa upower gconf xmlto libxslt docbook-xml docbook-xsl
+# Depends on: dconf dbus-glib docbook-xml docbook-xsl gconf gnome-desktop json-glib libxslt mesa meson upower xmlto  
 
 description="start up the GNOME Desktop environment"
 url="http://www.gnome.org/"
-packager="remy <remy@nutyx.org>"
+packager="fanch <fanch@nutyx.org>"
 contributors="Fanch, Tnut"
 run=()
 
 name=gnome-session
-version=3.26.1
+version=3.28.0
 release=1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
@@ -15,7 +15,9 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 build() {
 cd $name-$version
 sed 's@/bin/sh@/bin/sh -l@' -i gnome-session/gnome-session.in
-./configure --prefix=/usr --docdir=/usr/share/doc/gnome-session-3.26.1
-make
-make DESTDIR=$PKG install
+mkdir build
+cd build
+meson --prefix=/usr -Dsystemd=false -Dsystemd_journal=false
+ninja
+DESTDIR=$PKG ninja install
 }

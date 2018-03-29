@@ -2,20 +2,19 @@
 
 description="GNOME Maps is a map application for GNOME"
 url="http://www.gnome.org/"
-packager="remy <remy@nutyx.org>"
+packager="fanch <fanch@nutyx.org>"
 contributors=" Tnut, jayce"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-maps
-version=3.26.2
+version=3.28.0
 release=1
 
 source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr
-sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool 
+./configure --prefix=/usr --disable-schemas-compile
 make
 make DESTDIR=$PKG install
 }

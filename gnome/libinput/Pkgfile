@@ -1,28 +1,22 @@
-# Depends on: libevdev mtdev libwacom gtk3 check libunwind
+# Depends on: doxygen graphviz libevdev mtdev libwacom gtk3 check libunwind meson valgrind
 
 description="Library for display servers and other applications that need to deal with input devices"
 url="http://www.freedesktop.org/wiki/Software/libinput/"
-packager="tnut <tnut@nutyx.org>"
+packager="fanch <fanch@nutyx.org>"
 contributors="Tnut, Pierre B, Jayce"
 
 name=libinput
-version=1.8.4
-release=1
+version=1.10.3
 
 source=(http://freedesktop.org/software/$name/$name-$version.tar.xz)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr    \
-            --disable-static \
-	    --disable-documentation
-make
-make DESTDIR=$PKG install
+mkdir build
+cd build
+meson --prefix=/usr -Dtests=false -Ddebug-gui=false -Ddocumentation=false
+ninja
+DESTDIR=$PKG ninja install
 }
-uptodate() {
-local url ext
-ext=".tar.xz"
-url="https://freedesktop.org/software/libinput/"
-lynx -dump -listonly --nonumbers $url/?C=M\;O=A|\
-grep $ext$|tail -1|sed s@$url/$name-@@|sed s@$ext@@
-}
+
+
