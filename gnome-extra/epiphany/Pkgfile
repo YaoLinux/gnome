@@ -2,8 +2,7 @@
 
 description="A GNOME web browser based on the WebKit rendering engine."
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
-
+packager="tnut <tnut@nutyx.org>"
 contributors="Tnut, Jayce, Remy"
 run=(adwaita-icon-theme gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 

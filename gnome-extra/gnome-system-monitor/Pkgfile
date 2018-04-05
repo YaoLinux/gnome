@@ -2,7 +2,7 @@
 
 description="A system monitor for GNOME"
 url="http://library.gnome.org/users/gnome-system-monitor/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Tnut, jayce"
 
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)

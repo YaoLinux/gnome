@@ -2,7 +2,7 @@
 
 description="Accessing the list of user accounts and information attached to those accounts." 
 url="http://www.freedesktop.org/wiki/Software/AccountsService/"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Pierre"
 
 name=accountsservice

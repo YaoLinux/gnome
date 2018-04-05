@@ -2,7 +2,7 @@
 
 description="Manage your email, contacts and schedule."
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Jayce, tnut"
 
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)

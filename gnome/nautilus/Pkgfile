@@ -2,7 +2,7 @@
 
 description="GNOME file manager"
 url="http://live.gnome.org/Nautilus"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut, jayce"
 run=(desktop-file-utils gtk-update-icon-cache)
 

@@ -2,7 +2,7 @@
 
 description="A text entry and UI navigation application (on-screen keyboard)"
 url="http://live.gnome.org/Caribou"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Fanch, Tnut"
 
 name=caribou

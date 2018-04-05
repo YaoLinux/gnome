@@ -2,7 +2,7 @@
 
 description="A graphical editor for the DConf database"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut, jayce"
 
 name=dconf-editor

@@ -2,7 +2,7 @@
 
 description="provides the core user interface functions for the GNOME 3 Desktop"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut"
 run=(adwaita-icon-theme dconf gnome-backgrounds gnome-menus gnome-themes-standard telepathy-mission-control gtk-update-icon-cache)
 

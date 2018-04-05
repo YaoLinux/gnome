@@ -2,7 +2,7 @@
 
 description="Programs that work with contacts, tasks, and calendar information"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut, Jayce"
 name=evolution-data-server
 version=3.28.0

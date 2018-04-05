@@ -2,7 +2,7 @@
 
 description="A graphical directory tree analyzer"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Tnut,jayce"
 run=(desktop-file-utils gtk-update-icon-cache)
 

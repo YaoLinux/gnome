@@ -2,7 +2,7 @@
 
 description="The GNOME Bluetooth Subsystem"
 url="https://wiki.gnome.org/Projects/GnomeBluetooth"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut, jayce"
 run=(gtk-update-icon-cache bluez)
 

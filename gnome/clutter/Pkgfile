@@ -2,7 +2,7 @@
 
 description="A GObject based library for creating fast, visually rich graphical user interfaces"
 url="https://blogs.gnome.org/clutter"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Tnut"
 
 name=clutter

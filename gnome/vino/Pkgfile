@@ -2,7 +2,7 @@
 
 description="a VNC server for the GNOME desktop"
 url="http://www.gnome.org"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Fanch, Tnut"
 run=(desktop-file-utils)
 

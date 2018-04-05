@@ -2,7 +2,7 @@
 
 description="Color profile manager for the GNOME desktop"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut, jayce"
 run=(desktop-file-utils gtk-update-icon-cache)
 

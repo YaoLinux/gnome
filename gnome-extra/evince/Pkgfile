@@ -2,7 +2,7 @@
 
 description="Pdf, Postscript, DjVu, Tiff, DVI documents viewer."
 url="http://gnome.org"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=evince

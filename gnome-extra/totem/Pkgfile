@@ -1,3 +1,5 @@
+# Depends on: appstream-glib meson ninja lirc gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache grilo libpeas gnome-icon-theme iso-codes gnome-doc-utils python2-xdg clutter-gst clutter-gtk xorg-libsm libpeas python-gobject libgdata gstreamer-plugins-good gstreamer-plugins-bad totem-pl-parser nautilus python-pylint
+
 # Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache grilo libpeas gnome-icon-theme iso-codes gnome-doc-utils python2-xdg clutter-gst clutter-gtk xorg-libsm libpeas python-gobject libgdata gstreamer-plugins-good gstreamer-plugins-bad totem-pl-parser nautilus python-pylint
 
 description="GNOME3 movie player based on GStreamer"

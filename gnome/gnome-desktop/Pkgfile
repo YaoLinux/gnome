@@ -2,7 +2,7 @@
 
 description="Library with common API for various GNOME modules"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Tnut, Fanch, Jayce"
 
 run=(gsettings-desktop-schemas freefont-ttf)

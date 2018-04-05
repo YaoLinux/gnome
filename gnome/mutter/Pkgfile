@@ -2,7 +2,7 @@
 
 description="Window manager for gnome."
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors=""
 name=mutter
 version=3.28.0

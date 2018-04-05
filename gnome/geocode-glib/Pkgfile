@@ -2,7 +2,7 @@
 
 description="A convenience library for the geocoding and reverse geocoding"
 url="https://en.wikipedia.org/wiki/Geocoding"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Fanch, Tnut"
 
 name=geocode-glib

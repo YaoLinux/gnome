@@ -2,7 +2,7 @@
 
 description="The Control Center for GNOME"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut, jayce"
 run=(iso-codes gsettings-desktop-schemas)
 

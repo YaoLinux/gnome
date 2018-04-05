@@ -2,7 +2,7 @@
 
 description="GNOME service to access online accounts"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut, jayce"
 run=(gtk-update-icon-cache)
 

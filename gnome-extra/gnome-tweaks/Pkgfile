@@ -2,7 +2,7 @@
 
 description="A tool to customize advanced GNOME 3 options"
 url="https://live.gnome.org/GnomeTweakTool"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Tnut"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache python-gobject python2-gobject)
 

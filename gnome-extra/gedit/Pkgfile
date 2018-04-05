@@ -2,7 +2,7 @@
 
 description="A text editor for GNOME"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Tnut"
 
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)

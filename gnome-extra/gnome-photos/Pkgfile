@@ -2,7 +2,7 @@
 
 description="Access, organize, and share your photos on GNOME"
 url="http://www.gnome.org"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Tnut, Jayce"
 run=(intltool itstool gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 

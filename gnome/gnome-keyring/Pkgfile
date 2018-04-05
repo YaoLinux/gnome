@@ -2,7 +2,7 @@
 
 description="GNOME Password Management daemon"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Fanch, Tnut"
 
 name=gnome-keyring

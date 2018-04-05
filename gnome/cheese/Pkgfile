@@ -2,7 +2,7 @@
 
 description="Use your webcam to take photos and videos, apply fancy special effects and share the fun with others"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut"
 run=(gtk-update-icon-cache)
 

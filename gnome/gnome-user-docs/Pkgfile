@@ -2,7 +2,7 @@
 
 description="The GNOME User Docs package contains documentation for GNOME"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="remy <remy@nutyx.org>"
 contributors="Fanch, Tnut"
 
 name=gnome-user-docs

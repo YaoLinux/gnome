@@ -2,7 +2,7 @@
 
 description="A library to delight your users with fancy features"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
 contributors="Tnut, Fanch"
 run=(meson vala gobject-introspection)
 

@@ -2,7 +2,7 @@
 
 description="Provides word-processor-style highlighting and replacement of misspelled words in a GtkTextView widget"
 url="http://gtkspell.sourceforge.net/"
-packager="fanch <fanch@nutyx.org>"
+packager="jayce <jayce.net@gmail.com>"
 contributors="Tnut"
 
 name=gtkspell
