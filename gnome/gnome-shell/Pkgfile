@@ -1,14 +1,14 @@
-# Depends on: sassc caribou evolution-data-server gjs gnome-control-center libcroco mutter startup-notification gnome-bluetooth gstreamer-plugins-base network-manager-applet gtk-doc adwaita-icon-theme dconf gnome-backgrounds gnome-menus gnome-themes-standard telepathy-mission-control
+# Depends on: sassc caribou evolution-data-server gjs gnome-control-center libcroco mutter startup-notification gnome-bluetooth gstreamer-plugins-base network-manager-applet gtk-doc adwaita-icon-theme dconf gnome-backgrounds gnome-menus telepathy-mission-control
 
 description="provides the core user interface functions for the GNOME 3 Desktop"
 url="http://www.gnome.org/"
-packager="remy <remy@nutyx.org>"
-contributors="Fanch, Tnut"
-run=(adwaita-icon-theme dconf gnome-backgrounds gnome-menus gnome-themes-standard telepathy-mission-control gtk-update-icon-cache)
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch, Tnut, Remy"
+run=(adwaita-icon-theme dconf gnome-backgrounds gnome-menus telepathy-mission-control gtk-update-icon-cache)
 
 name=gnome-shell
 version=3.28.0
-release=1
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
