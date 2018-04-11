@@ -3,11 +3,11 @@
 description="A GNOME web browser based on the WebKit rendering engine."
 url="http://www.gnome.org/"
 packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce, Remy"
+contributors="Tnut, Jayce, Remy, Fanch"
 run=(adwaita-icon-theme gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=epiphany
-version=3.28.0
+version=3.28.1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
