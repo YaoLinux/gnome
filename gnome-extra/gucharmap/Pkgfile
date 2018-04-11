@@ -7,7 +7,7 @@ contributors="Tnut, Jayce"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gucharmap
-version=10.0.3
+version=10.0.4
 
 source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
 
