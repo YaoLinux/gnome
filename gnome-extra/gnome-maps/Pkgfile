@@ -2,13 +2,13 @@
 
 description="GNOME Maps is a map application for GNOME"
 url="http://www.gnome.org/"
-packager="remy <remy@nutyx.org>"
-contributors=" Tnut, jayce"
+packager="tnut <tnut@nutyx.org>"
+contributors=" Tnut, Jayce, Fanch, Remy"
+
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-maps
-version=3.28.0
-release=1
+version=3.28.1
 
 source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
