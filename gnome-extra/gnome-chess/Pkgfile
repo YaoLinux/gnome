@@ -2,12 +2,12 @@
 
 description="Play the classic two-player boardgame of chess."
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
-contributors="Fanch, Jayce"
+packager="tnut <tnut@nutyx.org>"
+contributors="Fanch, Jayce, Tnut"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-chess
-version=3.28.0
+version=3.28.1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
