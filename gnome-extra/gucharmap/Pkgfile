@@ -13,7 +13,10 @@ source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar
 
 build() {
         cd $name-$version
-	./configure --prefix=/usr --enable-vala --with-unicode-data=download
+	LIBS="-ldl" \
+	./configure --prefix=/usr \
+	--enable-vala \
+	--with-unicode-data=download
         make
         make DESTDIR=$PKG install
 }
