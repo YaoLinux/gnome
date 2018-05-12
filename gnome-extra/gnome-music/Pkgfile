@@ -7,7 +7,7 @@ contributors="Tnut, Fanch, Remy"
 run=(intltool itstool python gobject-introspection gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-music
-version=3.28.1
+version=3.28.2.1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
  
