@@ -2,12 +2,11 @@
 
 description="GNOME application for managing PGP keys"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tnut, Jayce"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=seahorse
-version=3.20.0
-release=3
+version=3.30
 
-source=(http://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz)
+source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
