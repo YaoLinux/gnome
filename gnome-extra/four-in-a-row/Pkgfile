@@ -7,6 +7,6 @@ contributors="Tnut, Jayce"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=four-in-a-row
-version=3.22.2
+version=3.28.0
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
