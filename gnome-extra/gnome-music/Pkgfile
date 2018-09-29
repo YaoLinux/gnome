@@ -7,15 +7,8 @@ contributors="Tnut, Fanch, Remy"
 run=(intltool itstool python gobject-introspection gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-music
-version=3.28.2.1
+version=3.30.1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
  
-build() {
-cd $name-$version
-mkdir build
-cd build
-meson --prefix=/usr 
-ninja     
-DESTDIR=$PKG ninja install
-}
+build=meson
