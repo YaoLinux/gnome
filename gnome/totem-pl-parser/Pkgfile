@@ -3,12 +3,11 @@
 
 description="Totem playlist parser library."
 url="http://www.gnome.org/"
-packager="remy <remy@nutyx.org>"
-contributors="Tnut, jayce"
+packager="tnut <tnut@nutyx.org>"
+contributors="Tnut, Jayce, Remy"
 
 name=totem-pl-parser
-version=3.26.0
-release=1
+version=3.26.1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
