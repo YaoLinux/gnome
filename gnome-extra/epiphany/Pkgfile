@@ -1,4 +1,4 @@
-# Depends on: icu ninja meson lsb-release libwnck avahi gcr gnome-desktop iso-codes libgnome-keyring libnotify json-glib webkitgtk nss gnome-desktop gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
+# Depends on: icu ninja meson lsb-release libwnck avahi gcr gnome-desktop iso-codes libgnome-keyring libnotify json-glib webkitgtk nss gnome-desktop libdazzle gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
 
 description="A GNOME web browser based on the WebKit rendering engine."
 url="http://www.gnome.org/"
