@@ -1,4 +1,4 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  clutter-gtk geoclue2 geocode-glib gjs libchamplain libgee folks gfbgraph
+# Depends on: meson gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  clutter-gtk geoclue2 geocode-glib gjs libchamplain libgee folks gfbgraph
 
 description="GNOME Maps is a map application for GNOME"
 url="http://www.gnome.org/"
@@ -12,9 +12,4 @@ version=3.30.1
 
 source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
-build() {
-cd $name-$version
-./configure --prefix=/usr --disable-schemas-compile
-make
-make DESTDIR=$PKG install
-}
+build=meson
