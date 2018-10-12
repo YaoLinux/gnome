@@ -1,4 +1,4 @@
-# Depends on: clutter glib gnome-desktop libwacom libxkbcommon upower zenity gobject-introspection libcanberra startup-notification
+# Depends on: glib json-glib libinput xorg-libsm gnome-desktop libwacom libxkbcommon upower zenity gobject-introspection libcanberra startup-notification
 
 description="Window manager for gnome."
 url="http://www.gnome.org/"
