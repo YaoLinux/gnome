@@ -2,11 +2,11 @@
 
 description="Remote desktop client for Gnome"
 url="https://gnome.org"
-contributors=""
+contributors="tnut"
 packager="remy <remy@nutyx.org>"
  
 name=vinagre
-version=3.22.0
+version=git-4c0ad5df
 
 
 source=(freerdp2017.diff)
