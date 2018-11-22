@@ -7,7 +7,7 @@ contributors="Tnut, jayce, Remy"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-calendar
-version=3.30.0
+version=3.30.1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/${name}/${version%.*}/${name}-$version.tar.xz null-icaltime.diff)
 
