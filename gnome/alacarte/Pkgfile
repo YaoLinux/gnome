@@ -1,4 +1,4 @@
-# Depends on: gnome-menus python-gobject gtk-update-icon-cache
+# Depends on: perl-xml-parser gnome-menus python-gobject gtk-update-icon-cache
 
 description="Menu editor for gnome"
 url="http://www.gnome.org/"
