@@ -1,4 +1,4 @@
-# Depends on: dconf dbus gtk3 libxml2 libxslt meson ninja vala 
+# Depends on: systemd dconf dbus gtk3 libxml2 libxslt meson ninja vala 
 
 description="A graphical editor for the DConf database"
 url="http://www.gnome.org/"
@@ -14,7 +14,7 @@ build() {
 cd $name-$version
 mkdir build
 cd build
-meson --prefix=/usr -Denable-systemd=no
+meson --prefix=/usr --sysconfdir=/etc
 ninja
 DESTDIR=$PKG ninja install
 }
