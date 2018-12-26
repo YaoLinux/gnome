@@ -15,7 +15,7 @@ cd $name-$version
 sed 's@/bin/sh@/bin/sh -l@' -i gnome-session/gnome-session.in
 mkdir build
 cd build
-meson --prefix=/usr -Dsystemd=false -Dsystemd_journal=false
+meson --prefix=/usr
 ninja
 DESTDIR=$PKG ninja install
 }
