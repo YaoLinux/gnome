@@ -1,9 +1,9 @@
-# Depends on: git gnome-common yelp yelp-tools yelp-xsl docbook-xsl vte3 gnutls itstool gtk-vnc itstool libsecret telepathy-glib vala vte avahi appstream-glib freerdp 
+makedepends=(git gnome-common yelp yelp-tools yelp-xsl docbook-xsl vte3 gnutls itstool gtk-vnc itstool libsecret telepathy-glib vala vte avahi appstream-glib freerdp )
 
 description="Remote desktop client for Gnome"
 url="https://gnome.org"
-contributors="tnut"
-packager="remy <remy@nutyx.org>"
+maintainer="rems"
+packager="Yaolinux Team"
  
 name=vinagre
 version=git-4c0ad5df
