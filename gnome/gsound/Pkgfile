@@ -1,9 +1,9 @@
-# Depends on: glib libcanberra
+makedepends=(glib libcanberra)
 
 description="Small library for playing system sounds"
 url="https://wiki.gnome.org/Projects/GSound"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Fanch, Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gsound
 version=1.0.2
