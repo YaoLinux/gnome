@@ -1,9 +1,9 @@
-# Depends on: adwaita-icon-theme gtk3 itstool  desktop-file-utils gsettings-desktop-schemas librsvg gobject-introspection desktop-file-utils gtk-update-icon-cache meson ninja vala
+makedepends=(adwaita-icon-theme gtk3 itstool  desktop-file-utils gsettings-desktop-schemas librsvg gobject-introspection desktop-file-utils gtk-update-icon-cache meson ninja vala)
 
 description="A graphical directory tree analyzer"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(desktop-file-utils gtk-update-icon-cache)
 
 name=baobab
