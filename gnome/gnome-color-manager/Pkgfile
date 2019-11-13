@@ -1,9 +1,9 @@
-# Depends on: meson appstream-glib libcanberra desktop-file-utils shared-color-targets colord colord-gtk libexif exiv2 vte itstool gtk-update-icon-cache
+makedepends=(meson appstream-glib libcanberra desktop-file-utils shared-color-targets colord colord-gtk libexif exiv2 vte itstool gtk-update-icon-cache)
 
 description="Color profile manager for the GNOME desktop"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, Jayce, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-color-manager
