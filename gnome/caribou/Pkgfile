@@ -1,9 +1,9 @@
-# Depends on: at-spi2-atk python-atspi python-gobject gtk3 xorg-libxklavier libgee clutter dconf
+makedepends=(at-spi2-atk python-atspi python-gobject gtk3 xorg-libxklavier libgee clutter dconf)
 
 description="A text entry and UI navigation application (on-screen keyboard)"
 url="http://live.gnome.org/Caribou"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Fanch, Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=caribou
 version=0.4.21
