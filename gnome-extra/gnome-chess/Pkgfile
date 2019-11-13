@@ -1,9 +1,9 @@
-# Depends on: meson ninja gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  hicolor-icon-theme  gtk3 librsvg
+makedepends=(meson ninja gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  hicolor-icon-theme  gtk3 librsvg)
 
 description="Play the classic two-player boardgame of chess."
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Jayce, Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-chess
