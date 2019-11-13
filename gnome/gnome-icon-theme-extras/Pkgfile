@@ -1,9 +1,9 @@
-# Depends on: gnome-icon-theme
+makedepends=(gnome-icon-theme)
 
 description="Gnome icon-theme, extra icons"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 
 run=(gnome-icon-theme gtk-update-icon-cache)
 
