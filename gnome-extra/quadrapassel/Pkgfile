@@ -2,8 +2,10 @@ makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache 
 
 description="Fit falling blocks together (Tetris-like game for GNOME)"
 url="https://live.gnome.org/Quadrapassel"
+
 packager="Yaolinux Team"
 maintainer="rems"
+
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=quadrapassel
