@@ -6,7 +6,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=accountsservice
-version=0.6.54
+version=0.6.55
 
 source=(http://www.freedesktop.org/software/$name/$name-$version.tar.xz)
 
