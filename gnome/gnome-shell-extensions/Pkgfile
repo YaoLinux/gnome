@@ -1,9 +1,9 @@
-# Depends on: libgtop meson
+makedepends=(libgtop meson)
 
 description="Gnome-shell extensions"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gnome-shell-extensions
 version=3.30.1
