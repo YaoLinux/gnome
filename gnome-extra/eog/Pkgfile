@@ -1,9 +1,9 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme desktop-file-utils gnome-desktop gnome-icon-theme libpeas shared-mime-info yelp-xsl gobject-introspection librsvg exempi lcms2 libexif meson ninja
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme desktop-file-utils gnome-desktop gnome-icon-theme libpeas shared-mime-info yelp-xsl gobject-introspection librsvg exempi lcms2 libexif meson ninja)
 
 description="Eye of Gnome: An image viewing and cataloging program"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, jayce, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
