@@ -1,9 +1,9 @@
-# Depends on: gtk3 gdk-pixbuf pango cairo
+makedepends=(gtk3 gdk-pixbuf pango cairo)
 
 description="GNOME Docking Libraries"
 url="http://www.gnome.org/"
-packager="fanch <fanch@nutyx.org>"
-contributors="Tnut, Jayce"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gdl
 version=3.28.0
