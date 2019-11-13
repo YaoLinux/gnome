@@ -1,9 +1,9 @@
-# Depends on: systemd accountsservice nss libcanberra gnome-session upower
+makedepends=(systemd accountsservice nss libcanberra gnome-session upower)
 
 description="Library for Graphical logins and managing local and remote displays."
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx dot org>"
-contributors="Fanch"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gdm
 version=3.28.3
