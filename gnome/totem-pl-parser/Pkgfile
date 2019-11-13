@@ -1,10 +1,10 @@
-# Depends on: gmime intltool libsoup gobject-introspection libarchive libgcrypt meson
+makedepends=(gmime intltool libsoup gobject-introspection libarchive libgcrypt meson)
 
 
 description="Totem playlist parser library."
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=totem-pl-parser
 version=3.26.1
