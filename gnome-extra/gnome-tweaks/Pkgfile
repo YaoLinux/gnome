@@ -1,9 +1,9 @@
-# Depends on: gtk3 gconf python-gobject python2-gobject gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache meson
+makedepends=(gtk3 gconf python-gobject python2-gobject gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache meson)
 
 description="A tool to customize advanced GNOME 3 options"
 url="https://live.gnome.org/GnomeTweakTool"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache python-gobject python2-gobject)
 
 name=gnome-tweaks
