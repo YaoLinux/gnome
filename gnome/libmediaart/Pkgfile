@@ -1,9 +1,9 @@
-# Depends on: gdk-pixbuf
+makedepends=(gdk-pixbuf)
 
 description="Library tasked with managing, extracting and handling media art caches"
 url="https://github.com/curlybeast/libmediaart"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=libmediaart
 version=1.9.4
