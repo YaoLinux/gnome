@@ -1,9 +1,9 @@
-# Depends on: meson ninja glib gobject-introspection intltool vala
+makedepends=(meson ninja glib gobject-introspection intltool vala)
 
 description="The Gcab package contains a program and a library used to create Microsoft cabinet (.cab) archives."
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gcab
 version=1.1
