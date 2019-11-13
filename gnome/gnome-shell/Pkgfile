@@ -1,9 +1,9 @@
-# Depends on: systemd meson sassc caribou evolution-data-server gjs gnome-control-center gnome-themes-extra libcroco mutter startup-notification gnome-bluetooth gstreamer-plugins-base network-manager-applet gtk-doc adwaita-icon-theme dconf gnome-backgrounds gnome-menus telepathy-mission-control gnome-settings-daemon gdm
+makedepends=(systemd meson sassc caribou evolution-data-server gjs gnome-control-center gnome-themes-extra libcroco mutter startup-notification gnome-bluetooth gstreamer-plugins-base network-manager-applet gtk-doc adwaita-icon-theme dconf gnome-backgrounds gnome-menus telepathy-mission-control gnome-settings-daemon gdm)
 
 description="provides the core user interface functions for the GNOME 3 Desktop"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(adwaita-icon-theme dconf gnome-backgrounds gnome-menus telepathy-mission-control gtk-update-icon-cache gnome-settings-daemon gdm)
 
 name=gnome-shell
