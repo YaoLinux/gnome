@@ -1,9 +1,9 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 itstool libgtop vala bind nmap traceroute net-tool-cvs whois
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 itstool libgtop vala bind nmap traceroute net-tool-cvs whois)
 
 description="GUI interface for some of the most common command line network tools"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache nmap)
 
 name=gnome-nettool
