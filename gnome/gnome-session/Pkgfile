@@ -1,9 +1,9 @@
-# Depends on: dconf dbus-glib docbook-xml docbook-xsl gconf gnome-desktop json-glib libxslt mesa meson upower xmlto  
+makedepends=(dconf dbus-glib docbook-xml docbook-xsl gconf gnome-desktop json-glib libxslt mesa meson upower xmlto  )
 
 description="start up the GNOME Desktop environment"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gnome-session
 version=3.30.1
