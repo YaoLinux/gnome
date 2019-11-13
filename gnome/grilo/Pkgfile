@@ -1,9 +1,9 @@
-# Depends on: meson glib libxml2 gobject-introspection gtk3 liboauth libsoup totem-pl-parser vala
+makedepends=(meson glib libxml2 gobject-introspection gtk3 liboauth libsoup totem-pl-parser vala)
 
 description="Framework focused on making media discovery and browsing easy for application developers."
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 name=grilo
 version=0.3.7
 
