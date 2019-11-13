@@ -1,9 +1,9 @@
-# Depends on: gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  gtk3 itstool gobject-introspection vala
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  gtk3 itstool gobject-introspection vala)
 
 description="Gucharmap is a Unicode character map and font viewer"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gucharmap
