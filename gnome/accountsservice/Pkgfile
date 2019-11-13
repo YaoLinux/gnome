@@ -1,9 +1,9 @@
-# Depends on: systemd meson xmlto libxslt polkit gobject-introspection vala
+makedepends=(systemd meson xmlto libxslt polkit gobject-introspection vala)
 
 description="Accessing the list of user accounts and information attached to those accounts." 
 url="http://www.freedesktop.org/wiki/Software/AccountsService/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Pierre"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=accountsservice
 version=0.6.54
