@@ -1,9 +1,9 @@
-# Depends on: libdazzle meson gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache evolution-data-server desktop-file-utils intltool python
+makedepends=(libdazzle meson gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache evolution-data-server desktop-file-utils intltool python)
 
 description="GNOME calendar"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, jayce, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-calendar
