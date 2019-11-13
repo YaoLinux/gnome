@@ -1,9 +1,9 @@
-# Depends on: perl-xml-parser gnome-menus python-gobject gtk-update-icon-cache
+makedepends=(perl-xml-parser gnome-menus python-gobject gtk-update-icon-cache)
 
 description="Menu editor for gnome"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 
 run=(gtk-update-icon-cache)
 
