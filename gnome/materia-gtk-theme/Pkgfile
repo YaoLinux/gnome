@@ -6,11 +6,11 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=materia-gtk-theme
-version=20190201
+version=20191017
 
 PKGMK_KEEP_SOURCES="no"
 
-source=($url/archive/v$version.tar.gz)
+source=(https://github.com/nana-4/materia-theme/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd materia-theme-$version
