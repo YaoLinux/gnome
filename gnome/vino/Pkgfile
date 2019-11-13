@@ -1,9 +1,9 @@
-# Depends on: gconf libsoup telepathy-glib desktop-file-utils libnotify desktop-file-utils
+makedepends=(gconf libsoup telepathy-glib desktop-file-utils libnotify desktop-file-utils)
 
 description="a VNC server for the GNOME desktop"
 url="http://www.gnome.org"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Fanch, Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(desktop-file-utils)
 
 name=vino
