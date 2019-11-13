@@ -1,9 +1,9 @@
-# Depends on: gtk2 gtk3 intltool librsvg
+makedepends=(gtk2 gtk3 intltool librsvg)
 
 description="Default themes for the GNOME desktop"
 url="https://git.gnome.org/browse/gnome-themes-standard/"
-packager="fanch <fanch@nutyx.org>"
-contributors="Fanch, Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gnome-themes-extra
 version=3.28
