@@ -7,7 +7,7 @@ maintainer="rems"
 run=()
 
 name=pipewire
-version=0.2.3
+version=0.2.7
 release=1
 
 source=(pkgconfig.diff)
