@@ -1,9 +1,9 @@
-# Depends on: itstool
+makedepends=(itstool)
 
 description="The GNOME User Docs package contains documentation for GNOME"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gnome-user-docs
 version=3.30.1
