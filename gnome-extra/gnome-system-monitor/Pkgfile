@@ -1,9 +1,9 @@
-# Depends on: meson gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme itstool libgtop libwnck gtkmm glibmm librsvg gnome-icon-theme desktop-file-utils gnome-doc-utils
+makedepends=(meson gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache adwaita-icon-theme itstool libgtop libwnck gtkmm glibmm librsvg gnome-icon-theme desktop-file-utils gnome-doc-utils)
 
 description="A system monitor for GNOME"
 url="http://library.gnome.org/users/gnome-system-monitor/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce, Remy, Fanch"
+packager="Yaolinux Team"
+maintainer="rems"
 
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
