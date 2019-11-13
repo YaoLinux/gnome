@@ -1,9 +1,9 @@
-# Depends on: gtk3 upower dconf hicolor-icon-theme gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache
+makedepends=(gtk3 upower dconf hicolor-icon-theme gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 description="System power information and statistics"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Tnut, Jayce"
+packager="Yaolinux Team"
+maintainer="rems"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-power-manager
