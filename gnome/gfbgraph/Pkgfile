@@ -1,9 +1,9 @@
-# Depends on: librest json-glib gobject-introspection gnome-online-accounts
+makedepends=(librest json-glib gobject-introspection gnome-online-accounts)
 
 description="GLib/GObject wrapper for the Facebook Graph API"
 url="http://www.gnome.org/"
-packager="jayce <jayce.net@gmail.com>"
-contributors="Tnut"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=gfbgraph
 version=0.2.3
