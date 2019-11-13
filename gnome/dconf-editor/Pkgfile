@@ -1,9 +1,9 @@
-# Depends on: systemd dconf dbus gtk3 libxml2 libxslt meson ninja vala 
+makedepends=(systemd dconf dbus gtk3 libxml2 libxslt meson ninja vala )
 
 description="A graphical editor for the DConf database"
 url="http://www.gnome.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, jayce, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=dconf-editor
 version=3.30.2
