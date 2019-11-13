@@ -6,7 +6,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=libosinfo
-version=1.2.0
+version=1.6.0
 
 source=(https://releases.pagure.org/$name/$name-$version.tar.gz)
 
