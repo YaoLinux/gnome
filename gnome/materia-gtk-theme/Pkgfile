@@ -1,7 +1,8 @@
-makedepends=(gtk3 gnome-theme-extra )
+makedepends=(gtk3 gnome-themes-extra)
 
 description="Material design theme in GTK+ environment"
 url="https://github.com/nana-4/materia-theme"
+
 packager="Yaolinux Team"
 maintainer="rems"
 
