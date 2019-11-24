@@ -1,17 +1,20 @@
-makedepends=(systemd accountsservice nss libcanberra gnome-session upower)
+makedepends=(systemd accountsservice nss libcanberra gnome-session upower iso-codes pam)
 
 description="Library for Graphical logins and managing local and remote displays."
 url="http://www.gnome.org/"
+
 packager="Yaolinux Team"
 maintainer="rems"
 
 name=gdm
 version=3.34.1
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/gdm/${version%.*}/gdm-$version.tar.xz )
 
 build() {
 cd gdm-$version
+
 ./configure --prefix=/usr        \
             --sysconfdir=/etc    \
             --localstatedir=/var \
@@ -22,14 +25,12 @@ cd gdm-$version
             --disable-static  \
             --with-xdmcp=yes \
             --with-xinerama \
-            --with-audit \
             --with-selinux \
-            --without-wayland \
             --without-plymouth \
             --without-xevie \
             --disable-schemas-compile \
-            --without-tcp-wrappers \
-            --without-console-kit 
+            --without-tcp-wrappers
+
 make
 make DESTDIR=$PKG install
 }
