@@ -1,4 +1,4 @@
-makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache intltool itstool gobject-introspection desktop-file-utils hicolor-icon-theme clutter-gtk libcanberra librsvg)
+makedepends=(intltool itstool gobject-introspection libmanette hicolor-icon-theme clutter-gtk libcanberra librsvg gsound)
 
 description="Fit falling blocks together (Tetris-like game for GNOME)"
 url="https://live.gnome.org/Quadrapassel"
