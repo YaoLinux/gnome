@@ -1,27 +1,35 @@
-makedepends=(glib json-glib libinput xorg-libsm gnome-desktop libwacom libxkbcommon upower zenity gobject-introspection libcanberra startup-notification pipewire xorg-libxcursor xorg-libxcomposite wayland-protocols)
+makedepends=(glib json-glib libinput xorg-libsm gnome-desktop gnome-settings-daemon libwacom libxkbcommon upower zenity gobject-introspection libcanberra startup-notification pipewire xorg-libxcursor xorg-libxcomposite wayland)
 
 description="Window manager for gnome."
 url="http://www.gnome.org/"
+
 packager="Yaolinux Team"
 maintainer="rems"
+
 name=mutter
 version=3.34.1
+release=2
 
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz
+        http://www.linuxfromscratch.org/patches/blfs/svn/mutter-$version-upstream_fixes-1.patch)
+
+prepare() {
+
+cd $name-$version
+
+patch -Np1 -i ../mutter-3.34.1-upstream_fixes-1.patch
+}
 
 build() {
-cd $name-$version
-./configure --prefix=/usr \
- --localstatedir=/var \
- --libexecdir=/usr/lib \
- --disable-static \
- --disable-schemas-compile \
- --enable-compile-warnings=minimum \
- --enable-egl-device \
- --enable-remote-desktop \
- --disable-gtk-doc
-sed -e 's/ -shared / -Wl,-O1,--as-needed\0/g' \
- -i {.,cogl,clutter}/libtool
-make
-make DESTDIR=$PKG install
+
+mkdir build && cd build
+
+meson --prefix=/usr \
+      -Degl_device=true \
+      -Dprofiler=false \
+      -Dinstalled_tests=false \
+      ../$name-$version
+
+ninja
+DESTDIR=$PKG ninja install
 }
