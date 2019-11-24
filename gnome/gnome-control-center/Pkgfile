@@ -1,4 +1,4 @@
-makedepends=(autoconf git accountsservice clutter-gtk colord-gtk gnome-online-accounts gnome-settings-daemon grilo libgtop libpwquality kerberos shared-mime-info cheese cups samba gnome-bluetooth ibus meson modemmanager network-manager-applet ninja gnome-color-manager sound-theme-freedesktop cups-pk-helper vino gsettings-desktop-schemas wayland gdk-pixbuf)
+makedepends=(autoconf git accountsservice clutter-gtk colord-gtk gnome-online-accounts gnome-settings-daemon grilo libgtop gsound libpwquality kerberos shared-mime-info cheese cups samba gnome-bluetooth ibus network-manager-applet gnome-color-manager sound-theme-freedesktop cups-pk-helper vino gsettings-desktop-schemas wayland gdk-pixbuf udisks2)
 
 description="The Control Center for GNOME"
 url="http://www.gnome.org/"
