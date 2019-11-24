@@ -1,12 +1,14 @@
-makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache hicolor-icon-theme gtk3 libcanberra librsvg)
+makedepends=(gsound vala gobject-introspection yelp-tools appstream-glib hicolor-icon-theme gtk3 libcanberra librsvg)
 
 description="Make lines of the same color to win"
 url="http://www.gnome.org"
+
 packager="Yaolinux Team"
 maintainer="rems"
-run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=four-in-a-row
 version=3.34.1
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
+
+build=meson
