@@ -1,20 +1,14 @@
-makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache  gtk3 gjs libgweather desktop-file-utils geoclue2)
+makedepends=(gnome-desktop gtk3 gjs libgweather geoclue2 gobject-introspection appstream-glib)
 
 description="Access current weather conditions and forecasts"
 url="http://www.gnome.org/"
+
 packager="Yaolinux Team"
 maintainer="rems"
-run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-weather
 version=3.34.0
-release=3
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
-build() {
-cd $name-$version
-./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-schemas-compile --with-xvfb-tests
-make
-make DESTDIR=$PKG install
-}
+build=meson
