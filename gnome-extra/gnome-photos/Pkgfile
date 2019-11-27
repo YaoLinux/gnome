@@ -2,12 +2,15 @@ makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache 
 
 description="Access, organize, and share your photos on GNOME"
 url="http://www.gnome.org"
+
 packager="Yaolinux Team"
 maintainer="rems"
+
 run=(intltool itstool gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-photos
 version=3.34.0
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
