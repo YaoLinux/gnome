@@ -2,21 +2,17 @@ makedepends=(libsoup check)
 
 description="The Operating System information database"
 url="http://libosinfo.org"
+
 packager="Yaolinux Team"
 maintainer="rems"
 
 name=libosinfo
-version=1.6.0
+version=1.7.1
 
-source=(https://releases.pagure.org/$name/$name-$version.tar.gz)
+source=(https://releases.pagure.org/$name/$name-$version.tar.xz)
 
-build() {
- cd $name-$version
- ./configure --prefix=/usr \
- 	--disable-nls
-  make
-  make DESTDIR=$PKG install
-}
+build=meson
+
 uptodate() {
 local url ext
 url="https://releases.pagure.org/$name/"
