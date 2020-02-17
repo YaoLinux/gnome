@@ -1,0 +1,14 @@
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 gcr libsoup libsecret libpwquality desktop-file-utils dconf gpgme openldap intltool yelp-tools gobject-introspection xorg-libsm vala)
+
+description="GNOME application for managing PGP keys"
+url="http://www.gnome.org/"
+packager="Yaolinux Team"
+maintainer="rems"
+run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
+
+name=seahorse
+version=3.34.1
+
+source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
+
+build=meson
