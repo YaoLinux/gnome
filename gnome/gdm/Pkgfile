@@ -8,7 +8,7 @@ maintainer="rems"
 
 name=gdm
 version=3.34.1
-release=2
+release=4
 
 source=(http://ftp.gnome.org/pub/gnome/sources/gdm/${version%.*}/gdm-$version.tar.xz )
 
@@ -29,7 +29,10 @@ cd gdm-$version
             --without-plymouth \
             --without-xevie \
             --disable-schemas-compile \
-            --without-tcp-wrappers
+            --without-tcp-wrappers \
+            --with-pam-mod-dir=/lib/security \
+            --with-initial-vt=7 \
+            --with-default-pam-config=lfs
 
 make
 make DESTDIR=$PKG install
