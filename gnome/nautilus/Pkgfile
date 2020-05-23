@@ -7,9 +7,9 @@ maintainer="rems"
 run=(desktop-file-utils gtk-update-icon-cache tracker-miners)
 
 name=nautilus
-version=3.34.2
+version=3.36.1.1
 
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*.*}/$name-$version.tar.xz)
 
 build() {
   cd $name-$version
