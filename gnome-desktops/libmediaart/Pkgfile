@@ -11,6 +11,8 @@ release=3
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
+set=(gnome3)
+
 build() {
  cd $name-$version
  ./configure --prefix=/usr \
