@@ -12,4 +12,6 @@ version=3.38.2
 
 source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
+set=(gnome3-apps)
+
 build=meson
