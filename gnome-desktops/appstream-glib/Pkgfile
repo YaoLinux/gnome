@@ -12,6 +12,8 @@ version=0.7.18
 
 source=(http://people.freedesktop.org/~hughsient/$name/releases/$name-$version.tar.xz)
 
+set=(gnome3)
+
 build() {
 cd $name-$version
 mkdir build
