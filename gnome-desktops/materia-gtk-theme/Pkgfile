@@ -13,6 +13,8 @@ PKGMK_KEEP_SOURCES="no"
 
 source=(https://github.com/nana-4/materia-theme/archive/v${version}/${name}-${version}.tar.gz)
 
+set=(gnome3)
+
 build() {
 	cd materia-theme-$version
 	install -d $PKG/usr/share/themes
