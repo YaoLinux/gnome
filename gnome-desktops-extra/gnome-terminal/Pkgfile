@@ -9,7 +9,7 @@ maintainer="rems"
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-terminal
-version=3.36.1.1
+version=3.38.1
 
 source=(ftp://ftp.gnome.org/pub/gnome/sources/gnome-terminal/${version%.*.*}/gnome-terminal-$version.tar.xz)
 
