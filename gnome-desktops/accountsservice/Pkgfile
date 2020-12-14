@@ -10,6 +10,8 @@ version=0.6.55
 
 source=(http://www.freedesktop.org/software/$name/$name-$version.tar.xz)
 
+set=(gnome3)
+
 build() {
 cd $name-$version
 mkdir build
