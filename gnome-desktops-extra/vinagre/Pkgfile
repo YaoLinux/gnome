@@ -10,6 +10,8 @@ version=3.22.0
 
 source=(freerdp2017.diff)
 
+set=(gnome3-apps)
+
 prepare () {
 
 git clone https://gitlab.gnome.org/GNOME/vinagre $name-$version
