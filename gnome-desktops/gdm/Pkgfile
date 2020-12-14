@@ -12,6 +12,8 @@ release=5
 
 source=(http://ftp.gnome.org/pub/gnome/sources/gdm/${version%.*}/gdm-$version.tar.xz )
 
+set=(gnome3)
+
 build() {
 cd gdm-$version
 
