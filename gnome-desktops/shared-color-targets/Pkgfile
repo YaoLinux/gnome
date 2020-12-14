@@ -10,6 +10,8 @@ release=3
 
 source=(https://people.freedesktop.org/~hughsient/releases/$name-$version.tar.xz)
 
+set=(gnome3)
+
 uptodate() {
 local url ext
 ext=".tar.xz"
