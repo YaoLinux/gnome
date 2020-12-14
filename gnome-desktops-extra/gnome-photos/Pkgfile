@@ -9,7 +9,7 @@ maintainer="rems"
 run=(intltool itstool gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-photos
-version=3.34.0
+version=3.38.0
 release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0:4}/$name-$version.tar.xz)
