@@ -1,0 +1,14 @@
+makedepends=(amtk gtksourceview4 libxml2 uchardet)
+
+description="Actions, Menus and Toolbars Kit for GTK+ applications"
+url="https://wiki.gnome.org/Projects/Amtk"
+
+maintainer="rems"
+packager="Yaolinux team"
+
+name=tepl
+version=5.1.1
+
+source=(https://download.gnome.org/sources/tepl/${version:0:3}/tepl-$version.tar.xz)
+
+build=meson
