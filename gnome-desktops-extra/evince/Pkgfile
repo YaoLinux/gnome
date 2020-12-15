@@ -16,22 +16,12 @@ set=(gnome3)
 
 build() {
 
-find / -name *.la -print -delete
+mkdir build && cd build
 
-cd $name-$version
-./configure --prefix=/usr           \
-            --enable-introspection  \
-            --disable-static \
-             --enable-nautilus \
-			--enable-pdf \
-			--enable-tiff \
-			--enable-djvu \
-			--enable-dvi \
-			--enable-t1lib \
-			--enable-comics \
-			--enable-gtk-doc \
-			--enable-multimedia \
-			--disable-schemas-compile
-make
-make DESTDIR=$PKG install
+meson --prefix=/usr \
+      -Dgtk_doc=false \
+      ../$name-$version
+
+ninja
+DESTDIR=$PKG ninja install
 }
