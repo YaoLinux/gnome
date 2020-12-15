@@ -1,4 +1,4 @@
-makedepends=(gsettings-desktop-schemas gnome-control-center appstream-glib libdazzle evolution-data-server intltool)
+makedepends=(gsettings-desktop-schemas gnome-control-center appstream-glib libdazzle evolution-data-server intltool libhandy0)
 
 description="GNOME calendar"
 url="http://www.gnome.org/"
