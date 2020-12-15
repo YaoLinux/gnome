@@ -1,4 +1,4 @@
-makedepends=(gmime intltool libsoup gobject-introspection libarchive libgcrypt cmake)
+makedepends=(gmime3 intltool libsoup gobject-introspection libarchive libgcrypt cmake)
 
 description="Totem playlist parser library."
 url="http://www.gnome.org/"
