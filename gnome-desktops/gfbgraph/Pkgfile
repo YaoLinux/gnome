@@ -15,7 +15,10 @@ set=(gnome3)
 
 build() {
 cd $name-$version
-./configure --prefix=/usr --disable-static
+
+./autogen.sh --prefix=/usr \
+             --disable-static
+
 make
 make DESTDIR=$PKG install
 }
