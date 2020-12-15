@@ -1,0 +1,19 @@
+makedepends=(gtk3 vala)
+
+description="Library full of GTK+ widgets for mobile phones"
+url="https://gitlab.gnome.org/GNOME/libhandy"
+
+maintainer="rems"
+packager="Yaolinux team"
+
+name="libhandy0"
+version=0.0.13
+
+source=(https://source.puri.sm/Librem5/libhandy/-/archive/v$version/libhandy-v$version.tar.bz2)
+
+build=meson
+
+prepare() {
+
+mv libhandy-v$version $name-$version
+}
