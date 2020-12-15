@@ -1,4 +1,4 @@
-makedepends=(meson ninja gtk3 libcanberra gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
+makedepends=(libhandy gtk3 libcanberra gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 description="Take pictures of your screen"
 url="http://www.gnome.org/"
@@ -13,16 +13,4 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 set=(gnome3)
 
-build() {
-cd $name-$version
-mkdir -p build
-cd build
-meson --prefix=/usr ..
-sed '/^build all/s@src/org.gnome.Screenshot.metainfo.xml@@' \
-    -i build.ninja
-cp ../src/org.gnome.Screenshot.metainfo.xml.in \
-          src/org.gnome.Screenshot.metainfo.xml
-
-ninja
-DESTDIR=$PKG ninja install
-}          
+build=meson
