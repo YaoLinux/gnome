@@ -1,0 +1,13 @@
+makedepends=(gtk3 glib autoconf-archive gobject-introspection gtk-doc)
+
+description="Actions, Menus and Toolbars Kit for GTK+ applications"
+url="https://wiki.gnome.org/Projects/Amtk"
+
+maintainer="rems"
+packager="Yaolinux team"
+
+name=amtk
+version=5.2.0
+
+source=(https://download.gnome.org/sources/amtk/${version:0:3}/amtk-$version.tar.xz)
+
