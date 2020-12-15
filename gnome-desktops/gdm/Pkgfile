@@ -8,39 +8,27 @@ maintainer="rems"
 
 name=gdm
 version=3.38.2
-release=5
 
 source=(http://ftp.gnome.org/pub/gnome/sources/gdm/${version%.*}/gdm-$version.tar.xz )
 
 set=(gnome3)
 
 build() {
-cd gdm-$version
+mkdir build && cd build
 
-./configure --prefix=/usr        \
-            --sysconfdir=/etc    \
-            --localstatedir=/var \
-            --with-run-dir=/run/gdm \
-            --enable-gdm-xsession \
-            --enable-ipv6    \
-            --enable-authentication-scheme=pam \
-            --disable-static  \
-            --with-xdmcp=yes \
-            --with-xinerama \
-            --with-selinux \
-            --without-plymouth \
-            --without-xevie \
-            --disable-schemas-compile \
-            --without-tcp-wrappers \
-            --with-pam-mod-dir=/lib/security \
-            --with-initial-vt=7 \
-            --with-default-pam-config=lfs
+meson --prefix=/usr        \
+      -Drun-dir=/run/gdm \
+      -Dgdm-xsession=true \
+      -Dipv6=true \
+      -Dselinux=disabled \
+      -Dplymouth=disabled \
+      -Dsystemdsystemunitdir=/lib/systemd/system \
+      -Dsystemduserunitdir=/usr/lib/systemd/user \
+      -Dpam-mod-dir=/lib/security \
+      -Dinitial-vt=7 \
+      -Ddefault-pam-config=lfs \
+      ../gdm-$version
 
-make
-make DESTDIR=$PKG install
-
-install -Dm644 /dev/stdin "$PKG/usr/lib/sysusers.d/gdm.conf" <<END
-g gdm 120 -
-u gdm 120 "Gnome Display Manager" /var/lib/gdm
-END
+ninja
+DESTDIR=$PKG ninja install
 }
