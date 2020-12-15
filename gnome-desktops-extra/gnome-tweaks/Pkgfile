@@ -1,10 +1,10 @@
-makedepends=(gtk3 gconf python-gobject python2-gobject gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache meson libhandy)
+makedepends=(gtk3 python-gobject libhandy gnome-settings-daemon)
 
 description="A tool to customize advanced GNOME 3 options"
 url="https://live.gnome.org/GnomeTweakTool"
 packager="Yaolinux Team"
 maintainer="rems"
-run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache python-gobject python2-gobject libhandy)
+run=(python-gobject libhandy)
 
 name=gnome-tweaks
 version=3.34.1
