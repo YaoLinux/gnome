@@ -1,4 +1,4 @@
-makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache dconf gconf gtk3 gnome-doc-utils gsettings-desktop-schemas vte3 nautilus )
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache dconf gtk3 gnome-doc-utils gsettings-desktop-schemas vte3 nautilus)
 
 description="The GNOME Terminal Emulator"
 url="http://www.gnome.org/"
@@ -11,19 +11,20 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 name=gnome-terminal
 version=3.38.1
 
-source=(ftp://ftp.gnome.org/pub/gnome/sources/gnome-terminal/${version%.*.*}/gnome-terminal-$version.tar.xz)
+source=(https://download.gnome.org/sources/gnome-terminal/${version%.*}/gnome-terminal-$version.tar.xz)
 
 set=(gnome3)
 
 build() {
-find / -name *.la -print -delete
 
 cd $name-$version
 ./configure --prefix=/usr             \
             --disable-static          \
             --disable-migration       \
             --disable-search-provider \
-            --without-pcre2 --with-nautilus-extension
+            --without-pcre2 \
+            --with-nautilus-extension
+
 make
 make DESTDIR=$PKG install
 }
