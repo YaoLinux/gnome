@@ -1,4 +1,4 @@
-makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache enchant gtk3  gtksourceview4 gvfs libpeas yelp-xsl enchant iso-codes libsoup libzeitgeist python-gobject gspell)
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache enchant gvfs libpeas yelp-xsl enchant iso-codes libsoup libzeitgeist python-gobject gspell tepl)
 
 description="A text editor for GNOME"
 url="http://www.gnome.org/"
