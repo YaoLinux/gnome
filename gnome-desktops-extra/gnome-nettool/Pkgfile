@@ -1,4 +1,4 @@
-makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 itstool libgtop vala bind nmap traceroute net-tool whois)
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 itstool libgtop vala bind-utils nmap traceroute net-tool whois)
 
 description="GUI interface for some of the most common command line network tools"
 url="http://www.gnome.org/"
