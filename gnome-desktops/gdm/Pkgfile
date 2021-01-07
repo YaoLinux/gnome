@@ -1,4 +1,4 @@
-makedepends=(systemd accountsservice nss libcanberra gnome-session upower iso-codes pam)
+makedepends=(systemd accountsservice nss libcanberra gnome-session upower iso-codes pam libhandy)
 
 description="Library for Graphical logins and managing local and remote displays."
 url="http://www.gnome.org/"
@@ -7,9 +7,9 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=gdm
-version=3.38.2
+version=3.38.2.1
 
-source=(http://ftp.gnome.org/pub/gnome/sources/gdm/${version%.*}/gdm-$version.tar.xz )
+source=(http://ftp.gnome.org/pub/gnome/sources/gdm/${version:0:4}/gdm-$version.tar.xz )
 
 set=(gnome3)
 
