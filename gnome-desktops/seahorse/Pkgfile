@@ -1,4 +1,4 @@
-makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 gcr libsoup libsecret libpwquality desktop-file-utils dconf gpgme openldap intltool yelp-tools gobject-introspection xorg-libsm vala)
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 gcr libsoup libsecret libpwquality desktop-file-utils dconf gpgme openldap intltool yelp-tools gobject-introspection xorg-libsm vala libhandy)
 
 description="GNOME application for managing PGP keys"
 url="http://www.gnome.org/"
@@ -8,6 +8,7 @@ run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=seahorse
 version=3.38.0.1
+release=2
 
 source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
 
