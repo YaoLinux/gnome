@@ -1,13 +1,16 @@
-makedepends=(meson ninja gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 libcanberra gnome-desktop libnotify libgweather desktop-file-utils geoclue2 geocode-glib gsound)
+makedepends=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache gtk3 libcanberra gnome-desktop libnotify libgweather geoclue2 geocode-glib gsound libhandy)
 
 description="Clocks applications for GNOME"
 url="http://www.gnome.org/"
+
 packager="Yaolinux Team"
 maintainer="rems"
+
 run=(gsettings-desktop-schemas desktop-file-utils gtk-update-icon-cache)
 
 name=gnome-clocks
 version=3.38.0
+release=2
 
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.xz)
 
